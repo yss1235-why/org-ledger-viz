@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return request.auth != null && 
+             request.auth.token.email in [
+               'admin@example.com'  // ⚠️ REPLACE WITH YOUR ACTUAL ADMIN EMAIL
+             ];
+    }
+    
+    // Allow everyone to read all documents (public transparency)
+    match /{document=**} {
+      allow read: if true;
+    }
+    
+    // Only admin can write to any collection
+    match /{document=**} {
+      allow write: if isAdmin();
+    }
+  }
+}
+
+// INSTRUCTIONS:
+// 1. Replace 'admin@example.com' with your actual admin email
+// 2. Copy these rules to Firebase Console:
+//    - Go to Firestore Database > Rules
+//    - Paste the rules above
+//    - Click "Publish"
+// 3. Make sure the email matches the ADMIN_EMAILS array in src/config/firebase.ts
