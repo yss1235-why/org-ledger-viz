@@ -320,8 +320,8 @@ export const TransactionManager = () => {
                     <SelectTrigger>
                       <SelectValue placeholder="Select an event (optional)" />
                     </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="">None</SelectItem>
+                   <SelectContent>
+                      <SelectItem value="none">None</SelectItem>  {/* ✅ Changed "" to "none" */}
                       {events.map((event) => (
                         <SelectItem key={event.id} value={event.title}>
                           {event.title}
