@@ -11,8 +11,8 @@ export const Header = () => {
             <Shield className="h-6 w-6 text-white" />
           </div>
           <div>
-            <h1 className="text-xl font-bold">Organization Treasury</h1>
-            <p className="text-xs text-muted-foreground">Transparent Fund Management</p>
+            <h1 className="text-xl font-bold">UDVLESL Ukhrul</h1>
+            <p className="text-xs text-muted-foreground">Transparent Fund Management, UDVLESL Ukhrul District, Manipur 795142</p>
           </div>
         </div>
         <Link to="/login">
