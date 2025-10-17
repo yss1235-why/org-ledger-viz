@@ -38,8 +38,8 @@ const Index = () => {
       </main>
       <footer className="border-t py-8 bg-muted/30">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© 2025 Organization Treasury. All rights reserved.</p>
-          <p className="mt-2">Committed to transparency and accountability</p>
+          <p>© 2025 UDVLESL. All rights reserved.</p>
+          <p className="mt-2">Developed By Innovative Archive</p>
         </div>
       </footer>
     </div>
