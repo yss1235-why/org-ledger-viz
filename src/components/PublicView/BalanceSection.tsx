@@ -23,8 +23,8 @@ export const BalanceSection = ({ balance, loading }: BalanceSectionProps) => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
               <TrendingUp className="h-8 w-8 text-white" />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Current Treasury Balance</h2>
-            <p className="text-white/80 text-sm">Click the balance to view complete transaction history</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-blue mb-2">Current Treasury Balance</h2>
+            <p className="text-blue/80 text-sm">Click the balance to view complete transaction history</p>
           </div>
 
           <Card 
